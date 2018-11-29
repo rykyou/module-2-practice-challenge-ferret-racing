@@ -1,0 +1,2 @@
+class Tunnel < ApplicationRecord
+end
