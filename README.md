@@ -62,3 +62,5 @@ Read through to get a sense of the scope of this code challenge, and then tackle
 
 BONUS:
 Make sure you have good user flow by having links like "Go Back!" or "See all Ferrets!" to avoid navigating solely through the address bar.
+
+Thanks and credit to @16sheep for this lab. <3
