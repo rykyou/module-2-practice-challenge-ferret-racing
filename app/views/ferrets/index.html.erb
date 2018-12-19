@@ -1,6 +1,10 @@
 <h1>Wecome to FerretVille! Here are all our ferrets:</h1>
 
-
+<ul>
+  <% @ferrets.each do |ferret| %>
+    <li><%= link_to ferret.name, ferret %></li>
+  <% end %>
+</ul>
 
 
 

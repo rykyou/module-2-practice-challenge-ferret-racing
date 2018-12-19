@@ -4,5 +4,9 @@ class FerretsController < ApplicationController
     @ferrets = Ferret.all
   end
 
+  def show
+    @ferret = Ferret.find(params[:id])
+  end
+
 
 end
