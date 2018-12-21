@@ -1,11 +1,12 @@
 <h1>All Charities</h1>
 
-
+  <ul>
     <% @charities.each do |charity| %>
-      <tr>
-        <td><%= charity.name %></td>
-        <td><%= charity.main_focus %></td>
-      </tr>
+      <li>
+        <%= link_to charity.name, charity_path(charity) %>
+      </li>
     <% end %>
+  </ul>
 
-<%= link_to 'All Ferrets', ferrets_path %>
+<%= link_to 'All Ferrets', ferrets_path %> |
+<%= link_to 'All Tunnels', tunnels_path %>

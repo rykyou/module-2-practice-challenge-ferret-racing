@@ -1,0 +1,14 @@
+<style> #error {
+  color: red;
+}
+</style>
+
+<% if @ferret.errors %>
+  <ul>
+    <div id="error"><% @ferret.errors.full_messages.each do |e| %>
+      <li>
+        <%= e %>
+      </li>
+    <% end %></div>
+  </ul>
+<% end %>

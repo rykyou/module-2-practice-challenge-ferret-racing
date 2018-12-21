@@ -1,16 +1,14 @@
-<h1>Wecome to FerretVille! Here are all our ferrets:</h1>
+<h1>Welcome to FerretVille! Here are all our ferrets:</h1>
+
+<ul>
+  <% @ferrets.each do |ferret| %>
+    <li>
+      <%= link_to ferret.name, ferret_path(ferret) %>
+    </li>
+  <% end %>
+</ul>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<%= link_to 'New Ferret', new_ferret_path %>
-<%= link_to 'All Charities', charities_path %>
+<%= link_to 'New Ferret', new_ferret_path %> |
+<%= link_to 'All Charities', charities_path %> |
+<%= link_to 'All Tunnels', tunnels_path %>

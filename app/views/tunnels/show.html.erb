@@ -1,0 +1,10 @@
+<h1>Tunnel <%= @tunnel.colour %></h1>
+
+<ul>
+  <% @tunnel.ferrets.each do |ferret| %>
+    <li><%= ferret.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Back", tunnels_path %>
+<%= link_to "All Ferrets", ferrets_path %>

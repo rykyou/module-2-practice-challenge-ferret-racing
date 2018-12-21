@@ -1,1 +1,10 @@
 <h1>Tunnels</h1>
+
+<ul>
+  <% @tunnels.each do |tunnel| %>
+    <li><%= link_to tunnel.colour, tunnel_path(tunnel) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'All Ferrets', ferrets_path %> |
+<%= link_to 'All Charities', charities_path %>

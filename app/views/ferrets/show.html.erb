@@ -1,0 +1,18 @@
+<h1><%= @ferret.name %><h1>
+
+<ul>
+  <li>
+    Neutered?
+    <% if @ferret.neutered %>
+      Yes
+    <% else %>
+      No
+    <% end %>
+  </li>
+  <li>
+    Belongs to: <%= @ferret.charity.name %>
+  </li>
+</ul>
+
+<p><%= link_to "All Ferrets", ferrets_path %></p>
+<p><%= link_to "Edit This Ferret", edit_ferret_path(@ferret) %></p>

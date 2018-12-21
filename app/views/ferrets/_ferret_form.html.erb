@@ -1,0 +1,14 @@
+<ul>
+  <%= form_for(@ferret) do |f| %>
+    <li>
+      <%= f.label "Ferret Name" %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.check_box :neutered, {}, "true", "false" %> Neutered
+    </li>
+    <li>
+      Charity: <%= f.collection_select :charity_id, Charity.all, :id, :name %>
+    </li>
+<%= f.submit submit_method %>
+<% end %>
